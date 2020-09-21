@@ -657,6 +657,10 @@ class RoomDetailFragment @Inject constructor(
                 roomDetailViewModel.handle(RoomDetailAction.EndCall)
                 true
             }
+            R.id.search              -> {
+                navigator.openSearch(requireContext(), roomDetailArgs.roomId)
+                true
+            }
             else                     -> super.onOptionsItemSelected(item)
         }
     }
