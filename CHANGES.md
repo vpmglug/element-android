@@ -10,6 +10,7 @@ Improvements 🙌:
 
 Bugfix 🐛:
  - Fix Splash layout on small screens
+ - Simplifies draft management and should fix bunch of draft issues (#952, #683)
 
 Translations 🗣:
  -
