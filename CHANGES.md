@@ -2,7 +2,7 @@ Changes in Element 1.0.7 (2020-XX-XX)
 ===================================================
 
 Features ✨:
- -
+ - Search messages in a room - phase 1 (#2110)
 
 Improvements 🙌:
  - Handle date formatting properly (show time am/pm if needed, display year when needed)
@@ -19,7 +19,7 @@ Translations 🗣:
  -
 
 SDK API changes ⚠️:
- - 
+ - Search messages in a room by using Session.searchService() or Room.search()
 
 Build 🧱:
  -
