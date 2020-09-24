@@ -48,7 +48,6 @@
     <string name="leave">Lämna</string>
     <string name="stay">Stanna</string>
     <string name="send">Skicka</string>
-    <string name="copy">Kopiera</string>
     <string name="resend">Skicka igen</string>
     <string name="redact">Ta bort</string>
     <string name="quote">Citat</string>
@@ -347,11 +346,11 @@
     <string name="permissions_rationale_msg_camera">Element behöver tillstånd att komma åt din kamera för att kunna ta bilder och hålla videosamtal.</string>
     <string name="permissions_rationale_msg_camera_explanation">"
 \n
-\nVänligen ge tillstånd i nästa popup för att kunna utföra samtalet."</string>
+\nVänligen ge åtkomst i nästa popup för att kunna utföra samtalet."</string>
     <string name="permissions_rationale_msg_record_audio">Element behöver tillstånd att komma åt din mikrofon för hålla röstsamtal.</string>
     <string name="permissions_rationale_msg_record_audio_explanation">"
 \n
-\nVänligen ge tillstånd i nästa popup för att kunna utföra samtalet."</string>
+\nVänligen ge åtkomst i nästa popup för att kunna utföra samtalet."</string>
     <string name="permissions_rationale_msg_camera_and_audio">Element behöver tillstånd att komma åt din kamera och mikrofon för att kunna utföra videosamtal. 
 \n 
 \nVänligen ge tillstånd i nästa popup för att kunna utföra samtalet.</string>
@@ -526,7 +525,7 @@
     <string name="settings_add_3pid_confirm_password_title">Bekräfta ditt lösenord</string>
     <string name="settings_containing_my_display_name">Meddelanden som innehåller mitt visningsnamn</string>
     <string name="settings_user_settings">Användarinställningar</string>
-    <string name="settings_show_avatar_display_name_changes_messages_summary">Innehåller ändringar av avatar eller visningsnamn.</string>
+    <string name="settings_show_avatar_display_name_changes_messages_summary">Innehåller byten av avatar eller visningsnamn.</string>
     <string name="devices_delete_dialog_text">Den här handlingen kräver extra autentisering.
 \nFör att fortsätta, skriv in ditt lösenord.</string>
     <string name="devices_delete_pswd">Lösenord:</string>
@@ -1295,7 +1294,7 @@
     <string name="settings_notification_privacy_no_background_sync">Apparna behöver <b>inte</b> ansluta till hemservern i bakgrunden, det bör reducera batterianvändning</string>
     <string name="settings_turn_screen_on">Tänd skärmen i 3 sekunder</string>
     <string name="settings_background_sync">Bakgrundssynkronisering</string>
-    <string name="settings_background_fdroid_sync_mode">Bakgrundssynkläge (experimentellt)</string>
+    <string name="settings_background_fdroid_sync_mode">Bakgrundssynkläge</string>
     <string name="settings_background_fdroid_sync_mode_battery">Optimerad för batteri</string>
     <string name="settings_app_term_conditions">Användarvillkor</string>
     <string name="settings_third_party_notices">Meddelanden från tredje part</string>
@@ -1307,8 +1306,8 @@
     <string name="settings_devices_list">Sessioner</string>
     <string name="settings_send_typing_notifs_summary">Låt andra användare se när du skriver.</string>
     <string name="settings_send_markdown">Markdownformatering</string>
-    <string name="settings_show_read_receipts">Visa läsindikationer</string>
-    <string name="settings_show_read_receipts_summary">Tryck på läsindikationer för en detaljerad lista.</string>
+    <string name="settings_show_read_receipts">Visa läskvitton</string>
+    <string name="settings_show_read_receipts_summary">Tryck på läskvitton för en detaljerad lista.</string>
     <string name="settings_secure_backup_section_title">Säker säkerhetskopiering</string>
     <string name="settings_secure_backup_setup">Sätt upp säker säkerhetskopiering</string>
     <string name="settings_secure_backup_reset">Återställ säker säkerhetskopiering</string>
@@ -1567,8 +1566,6 @@
     <string name="settings_set_workmanager_delay_summary">%s
 \nSynkroniseringen kan skjutas upp beroende på resurserna (batteri) eller status för enheten (vila).</string>
     <string name="settings_set_sync_delay">Fördröjning mellan varje synkronisering</string>
-    <string name="settings_second">sekund</string>
-    <string name="settings_seconds">sekunder</string>
 
     <string name="settings_contact">Lokala kontakter</string>
     <string name="settings_contacts_app_permission">Kontaktbehörighet</string>
@@ -2128,7 +2125,7 @@
     <string name="login_server_url_form_modular_hint">Element Matrix Services-adress</string>
     <string name="login_server_url_form_other_hint">Adress</string>
     <string name="login_server_url_form_modular_text">Premiumservervärd för organisationer</string>
-    <string name="login_server_url_form_modular_notice">Skriv in adressen för Modular Element eller servern du vill använda</string>
+    <string name="login_server_url_form_modular_notice">Skriv in adressen för den Modular Element eller server du vill använda</string>
     <string name="login_server_url_form_other_notice">Skriv in adressen för en server eller Element du vill ansluta till</string>
     <string name="login_server_url_form_common_notice">Skriv in adressen för servern du vill använda</string>
 
@@ -2277,7 +2274,7 @@
     <string name="room_member_power_level_default_in">Standard i %1$s</string>
     <string name="room_member_power_level_custom_in">Anpassad (%1$d) i %2$s</string>
 
-    <string name="room_member_jump_to_read_receipt">Hoppa till läsindikation</string>
+    <string name="room_member_jump_to_read_receipt">Hoppa till läskvitto</string>
 
     <string name="rendering_event_error_type_of_event_not_handled">Element hanterar inte händelser av typen \'%1$s\'</string>
     <string name="rendering_event_error_exception">Element stötte på ett fel vid rendering av innehållet i händelsen med id \'%1$s\'</string>
@@ -2532,4 +2529,35 @@
     <string name="settings_security_pin_code_title">Aktivera PIN</string>
     <string name="settings_security_pin_code_summary">Om du vill återställa din PIN-kod, tryck på \"Glömt PIN\?\" för att logga ut och återställa.</string>
     <string name="auth_pin_confirm_to_disable_title">Bekräfta PIN för att återställa PIN</string>
+    <string name="auth_msisdn_already_defined">Det här telefonnumret är redan definierat.</string>
+    <string name="settings_phone_number_empty">Inget telefonnummer har lagts till till ditt konto</string>
+    <string name="settings_emails">E-postadresser</string>
+    <string name="settings_emails_empty">Ingen e-postadress har lagts till till ditt konto</string>
+    <string name="settings_phone_numbers">Telefonnummer</string>
+    <string name="settings_remove_three_pid_confirmation_content">Ta bort %s\?</string>
+    <string name="error_threepid_auth_failed">Se till att du har klickat på länken i e-brevet vi skickade till dig.</string>
+
+    <string name="settings_emails_and_phone_numbers_title">E-postadresser och telefonnummer</string>
+    <string name="settings_emails_and_phone_numbers_summary">Hantera e-postadresser och telefonnummer länkade till ditt Matrix-konto</string>
+
+    <string name="settings_text_message_sent_hint">Kod</string>
+    <string name="login_msisdn_notice">Vänligen använd internationellt format (telefonnumret måste börja med \'+\')</string>
+    <string name="confirm_your_identity_quad_s">Bekräfta din identitet genom att verifiera den här inloggningen, och ge den åtkomst till dina krypterade meddelanden.</string>
+    <string name="error_sso_flow_not_supported_yet">Tyvärr stöds den här handlingen inte än för konton anslutna med externt konto.</string>
+
+    <string name="error_opening_banned_room">Kan inte öppna ett rum du är bannad från.</string>
+    <string name="room_error_not_found">Kan inte hitta det här rummet. Se till att det existerar.</string>
+    <plurals name="seconds">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekunder</item>
+    </plurals>
+
+    <string name="settings_show_room_member_state_events">Visa statushändelser angående rumsmedlemmar</string>
+    <string name="settings_show_room_member_state_events_summary">Inkluderar när personer bjuds in, går med, lämnar, kickas, bannas eller byter sin avatar eller sitt namn.</string>
+    <string name="sent_a_poll">Omröstning</string>
+    <string name="sent_a_bot_buttons">Bottknappar</string>
+    <string name="sent_a_reaction">Reagerade med: %s</string>
+    <string name="sent_verification_conclusion">Verifieringsavslutning</string>
+
+    <string name="universal_link_malformed">Länken var felformaterad</string>
 </resources>

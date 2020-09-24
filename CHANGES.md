@@ -1,8 +1,40 @@
-Changes in Element 1.0.7 (2020-XX-XX)
+Changes in Element 1.0.8 (2020-XX-XX)
 ===================================================
 
 Features ✨:
  - Search messages in a room - phase 1 (#2110)
+
+Improvements 🙌:
+ - Add "show password" in import Megolm keys dialog
+ - Visually disable call buttons in menu and prohibit calling when permissions are insufficient (#2112)
+ - Better management of requested permissions (#2048)
+ - Add a setting to show timestamp for all messages (#2123)
+ - Use cache for user color
+ - Allow using an outdated homeserver, at user's risk (#1972)
+ - Restore small logo on login screens and fix scrolling issue on those screens
+
+Bugfix 🐛:
+ - Long message cannot be sent/takes infinite time & blocks other messages #1397
+ - User Verification in DM not working
+ - Manual import of Megolm keys does back up the imported keys
+ - Auto scrolling to the latest message when sending (#2094)
+ - Fix incorrect permission check when creating widgets (#2137)
+
+Translations 🗣:
+ -
+
+SDK API changes ⚠️:
+ - Rename `tryThis` to `tryOrNull`
+ - Search messages in a room by using Session.searchService() or Room.search()
+
+Build 🧱:
+ -
+
+Other changes:
+ - Add an advanced action to reset an account data entry
+
+Changes in Element 1.0.7 (2020-09-17)
+===================================================
 
 Improvements 🙌:
  - Handle date formatting properly (show time am/pm if needed, display year when needed)
@@ -13,16 +45,12 @@ Bugfix 🐛:
  - Speakerphone is not used for ringback tone (#1644, #1645)
  - Back camera preview is not mirrored anymore (#1776)
  - Various report of people that cannot play video (#2107)
+ - Rooms incorrectly marked as unread (#588)
+ - Allow users to show/hide room member state events (#1231) 
  - Fix stuck on loader when launching home
 
-Translations 🗣:
- -
-
 SDK API changes ⚠️:
- - Search messages in a room by using Session.searchService() or Room.search()
-
-Build 🧱:
- -
+ - Create a new RawService to get plain data from the server.
 
 Other changes:
  - Performance: share Realm instance used on UI thread and improve SharedPreferences reading time.

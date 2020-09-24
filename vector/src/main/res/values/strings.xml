@@ -56,7 +56,6 @@
     <string name="leave">Leave</string>
     <string name="stay">Stay</string>
     <string name="send">Send</string>
-    <string name="copy">Copy</string>
     <string name="resend">Resend</string>
     <string name="redact">Remove</string>
     <string name="quote">Quote</string>
@@ -90,6 +89,7 @@
     <string name="missing_permissions_error">"Due to missing permissions, this action is not possible.</string>
     <string name="missing_permissions_to_start_conf_call">You need permission to invite to start a conference in this room</string>
     <string name="no_permissions_to_start_conf_call">You do not have permission to start a conference call in this room</string>
+    <string name="no_permissions_to_start_webrtc_call">You do not have permission to start a call in this room</string>
     <string name="conference_call_in_progress">A conference is already in progress!</string>
     <string name="video_meeting">Start video meeting</string>
     <string name="audio_meeting">Start audio meeting</string>
@@ -814,8 +814,6 @@
     <string name="settings_set_workmanager_delay">Preferred Sync Interval</string>
     <string name="settings_set_workmanager_delay_summary">%s\nThe sync might be deferred depending on the resources (battery) or state of the device (sleep).</string>
     <string name="settings_set_sync_delay">Delay between each Sync</string>
-    <string name="settings_second">second</string>
-    <string name="settings_seconds">seconds</string>
     <plurals name="seconds">
         <item quantity="one">%d second</item>
         <item quantity="other">%d seconds</item>
@@ -858,6 +856,8 @@
     <string name="settings_12_24_timestamps">Show timestamps in 12-hour format</string>
     <string name="settings_show_read_receipts">Show read receipts</string>
     <string name="settings_show_read_receipts_summary">Click on the read receipts for a detailed list.</string>
+    <string name="settings_show_room_member_state_events">Show room member state events</string>
+    <string name="settings_show_room_member_state_events_summary">Includes invite/join/left/kick/ban events and avatar/display name changes.</string>
     <string name="settings_show_join_leave_messages">Show join and leave events</string>
     <string name="settings_show_join_leave_messages_summary">Invites, kicks, and bans are unaffected.</string>
     <string name="settings_show_avatar_display_name_changes_messages">Show account events</string>
@@ -1989,6 +1989,7 @@
     <string name="login_validation_code_is_not_correct">The entered code is not correct. Please check.</string>
     <string name="login_error_outdated_homeserver_title">Outdated homeserver</string>
     <string name="login_error_outdated_homeserver_content">This homeserver is running too old a version to connect to. Ask your homeserver admin to upgrade.</string>
+    <string name="login_error_outdated_homeserver_warning_content">This homeserver is running an old version. Ask your homeserver admin to upgrade. You can continue, but some features may not work correctly.</string>
 
     <plurals name="login_error_limit_exceeded_retry_after">
         <item quantity="one">Too many requests have been sent. You can retry in %1$d second…</item>
@@ -2228,6 +2229,8 @@
 
     <string name="settings_dev_tools">Dev Tools</string>
     <string name="settings_account_data">Account Data</string>
+    <string name="delete_account_data_warning">Delete the account data of type %1$s?\n\nUse with caution, it may lead to unexpected behavior.</string>
+
     <plurals name="poll_info">
         <item quantity="zero">%d vote</item>
         <item quantity="other">%d votes</item>
