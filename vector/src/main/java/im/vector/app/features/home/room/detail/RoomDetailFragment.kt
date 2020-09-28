@@ -700,7 +700,11 @@ class RoomDetailFragment @Inject constructor(
                     //                            safeStartCall(it, isVideoCall)
                     //                        }
                 } else if (!state.isAllowedToStartWebRTCCall) {
-                    showDialogWithMessage(getString(R.string.no_permissions_to_start_webrtc_call))
+                    if (session.getRoom(state.roomId)?.roomSummary()?.isDirect == true) {
+                        showDialogWithMessage(getString(R.string.no_permissions_to_start_webrtc_call_in_direct_room))
+                    } else {
+                        showDialogWithMessage(getString(R.string.no_permissions_to_start_webrtc_call))
+                    }
                 } else {
                     safeStartCall(isVideoCall)
                 }
@@ -710,7 +714,11 @@ class RoomDetailFragment @Inject constructor(
                 // can you add widgets??
                 if (!state.isAllowedToManageWidgets) {
                     // You do not have permission to start a conference call in this room
-                    showDialogWithMessage(getString(R.string.no_permissions_to_start_conf_call))
+                    if (session.getRoom(state.roomId)?.roomSummary()?.isDirect == true) {
+                        showDialogWithMessage(getString(R.string.no_permissions_to_start_conf_call_in_direct_room))
+                    } else {
+                        showDialogWithMessage(getString(R.string.no_permissions_to_start_conf_call))
+                    }
                 } else {
                     if (state.activeRoomWidgets()?.filter { it.type == WidgetType.Jitsi }?.any() == true) {
                         // A conference is already in progress!
